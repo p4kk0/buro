@@ -1,0 +1,350 @@
+
+  <div class="row p-3">
+    <div class="col text-left">
+      <h2>Tickets</h2>
+    </div>
+
+  </div>
+
+  <div class="row mb-3">
+    <div class="col">
+      <div class="text-success">
+        <i class="fas fa-circle">
+          <span class="ml-3">Atendido</span>
+        </i>
+      </div>
+      <div class="text-warning">
+        <i class="fas fa-circle">
+          <span class="ml-3">Mas de 12 horas</span>
+        </i>
+      </div>
+      <div class="text-danger">
+        <i class="fas fa-circle">
+          <span class="ml-3">Mas de 24 horas</span>
+        </i>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-3">
+    <div class="col-md-8">
+      <form class="form-inline">
+        <div class="form-group">
+          <span class="mr-3">Desde</span>
+          <input type="date" class="form-control" name="end" id="dateBeginId"  required/>
+        </div>
+        <div class="form-group mx-sm-3">
+          <span class="mr-3">Hasta</span>
+          <input type="date" class="form-control" name="end" id="dateEndId"  required/>
+        </div>
+        <div>
+          <button type="button" class="btn btn-outline-info btn-block " role="button" aria-pressed="true">Filtrar</button>
+        </div>
+      </form>
+    </div>
+    <div class="col-md-4 text-right">
+      <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#registroModal">
+        <i class="fas fa-plus-circle"></i>
+        Nuevo Ticket
+      </button>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12">
+      <table class="table table-responsive-lg table-hover">
+        <thead class="thead-success">
+          <tr>
+            <th scope="col">Codigo</th>
+            <th scope="col">Proveedor</th>
+            <th scope="col">Dia</th>
+            <th scope="col">Hora</th>
+            <th scope="col">Nombre Archivo</th>
+            <th scope="col">Estado</th>
+            <th scope="col">Prioridad</th>
+            <th scope="col">Referencia</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Panasonic</td>
+            <td>10/01/2018</td>
+            <td>07:05:00 am</td>
+            <td>Venta</td>
+            <td>En proceso</td>
+            <td>Alta</td>
+            <td class="text-center">
+              <div class="btn-group flex-btn-group-container text-danger">
+                <i class="fas fa-circle"></i>
+              </div>
+            </td>
+            <td class="text-right">
+              <div class="btn-group flex-btn-group-container">
+                <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#verModal">
+                  <i class="fas fa-eye"></i>
+                  <span class="d-none d-md-inline">Ver</span>
+                </button>
+                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#edicionModal">
+                  <i class="fas fa-pencil-alt"></i>
+                  <span class="d-none d-md-inline">Editar</span>
+                </button>
+                <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#eliminaModal">
+                  <i class="fas fa-trash-alt"></i>
+                  <span class="d-none d-md-inline">Eliminar</span>
+                </button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Nike</td>
+            <td>10/01/2018</td>
+            <td>07:05:00 am</td>
+            <td>Inventarios</td>
+            <td>En proceso</td>
+            <td>Media</td>
+            <td class="text-center">
+              <div class="btn-group flex-btn-group-container text-success">
+                <i class="fas fa-circle"></i>
+              </div>
+            </td>
+            <td class="text-right">
+              <div class="btn-group flex-btn-group-container">
+                <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#verModal">
+                  <i class="fas fa-eye"></i>
+                  <span class="d-none d-md-inline">Ver</span>
+                </button>
+                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#edicionModal">
+                  <i class="fas fa-pencil-alt"></i>
+                  <span class="d-none d-md-inline">Editar</span>
+                </button>
+                <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#eliminaModal">
+                  <i class="fas fa-trash-alt"></i>
+                  <span class="d-none d-md-inline">Eliminar</span>
+                </button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Adidas</td>
+            <td>23/02/2018</td>
+            <td>09:15:20 am</td>
+            <td>Pedidos</td>
+            <td>En proceso</td>
+            <td>Baja</td>
+            <td class="text-center">
+              <div class="btn-group flex-btn-group-container text-warning">
+                <i class="fas fa-circle"></i>
+              </div>
+            </td>
+            <td class="text-right">
+              <div class="btn-group flex-btn-group-container">
+                <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#verModal">
+                  <i class="fas fa-eye"></i>
+                  <span class="d-none d-md-inline">Ver</span>
+                </button>
+                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#edicionModal">
+                  <i class="fas fa-pencil-alt"></i>
+                  <span class="d-none d-md-inline">Editar</span>
+                </button>
+                <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#eliminaModal">
+                  <i class="fas fa-trash-alt"></i>
+                  <span class="d-none d-md-inline">Eliminar</span>
+                </button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Adidas</td>
+            <td>23/02/2018</td>
+            <td>09:15:20 am</td>
+            <td>Pedidos</td>
+            <td>Procesado</td>
+            <td></td>
+            <td >
+
+            </td>
+            <td >
+
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+
+  <div class="row">
+    <div class="col-12">
+      <nav aria-label="...">
+        <ul class="pagination justify-content-center">
+          <li class="page-item disabled">
+            <a class="page-link" href="#" tabindex="-1"> << </a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item active">
+            <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#"> >> </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+
+
+
+<!-- Modal Eliminar-->
+<div class="modal fade" id="eliminaModal" tabindex="-1" role="dialog" aria-labelledby="eliminaModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="eliminaModalLabel">Eliminar</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ¿Seguro desea eliminar el registro?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Si</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal Eliminar -->
+
+
+<!-- Modal Registro -->
+<div class="modal fade" id="registroModal" tabindex="-1" role="dialog" aria-labelledby="registroModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-lg" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="registroModalLabel">Registro</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <form>
+        <div class="form-group">
+          <label for="recipient-name" class="col-form-label">Codigo de Archivo:</label>
+          <input type="text" class="form-control" id="recipient-name">
+        </div>
+
+        <div class="form-group">
+          <label for="message-text" class="col-form-label">Comentarios:</label>
+          <textarea class="form-control" id="message-text"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="rolFormControlSelect1">Prioridad</label>
+          <select class="form-control" id="rolFormControlSelect1">
+            <option>Alta</option>
+            <option>Media</option>
+            <option>Baja</option>
+          </select>
+        </div>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+      <button type="button" class="btn btn-primary" data-dismiss="modal">Enviar</button>
+    </div>
+  </div>
+</div>
+</div>
+<!-- Modal Registro -->
+
+<!-- Modal Editar -->
+<div class="modal fade" id="edicionModal" tabindex="-1" role="dialog" aria-labelledby="edicionModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-lg" role="document">
+<div class="modal-content">
+  <div class="modal-header">
+    <h5 class="modal-title" id="edicionModalLabel">Edicion</h5>
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form>
+      <div class="form-group">
+        <label for="recipient-name" class="col-form-label">Codigo de Archivo:</label>
+        <input disabled type="text" class="form-control" id="recipient-name" value="1">
+      </div>
+
+      <div class="form-group">
+        <label for="message-text" class="col-form-label">Comentarios:</label>
+        <textarea class="form-control" id="message-text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis explicabo reiciendis tempore sit unde accusamus repudiandae consequatur ab soluta velit, blanditiis sunt, natus, officia nisi vitae autem sequi excepturi alias.
+        </textarea>
+      </div>
+      <div class="form-group">
+        <label for="rolFormControlSelect1">Prioridad</label>
+        <select class="form-control" id="rolFormControlSelect1">
+          <option>Alta</option>
+          <option>Media</option>
+          <option>Baja</option>
+        </select>
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+    <button type="button" class="btn btn-primary" data-dismiss="modal">Enviar</button>
+  </div>
+</div>
+</div>
+</div>
+<!-- Modal Editar -->
+
+
+<!-- Modal Ver -->
+<div class="modal fade" id="verModal" tabindex="-1" role="dialog" aria-labelledby="verModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-lg" role="document">
+<div class="modal-content">
+  <div class="modal-header">
+    <h5 class="modal-title" id="verModalLabel">Vista</h5>
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form>
+      <div class="form-group">
+        <label for="recipient-name" class="col-form-label">Codigo de Archivo:</label>
+        <input disabled type="text" class="form-control" id="recipient-name" value="1">
+      </div>
+
+      <div class="form-group">
+        <label for="message-text" class="col-form-label">Comentarios:</label>
+        <textarea disabled class="form-control" id="message-text" >
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci atque ducimus voluptatem illum. Aperiam vel veniam aliquid saepe inventore veritatis consectetur ut, impedit quisquam excepturi porro suscipit tempora! Nisi, sapiente!
+        </textarea>
+      </div>
+      <div class="form-group">
+        <label for="rolFormControlSelect1">Prioridad</label>
+        <select disabled class="form-control" id="rolFormControlSelect1">
+          <option>Alta</option>
+          <option>Media</option>
+          <option>Baja</option>
+        </select>
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+  </div>
+</div>
+</div>
+</div>
+<!-- Modal Ver -->

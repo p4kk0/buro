@@ -1,0 +1,62 @@
+body,html {
+    height: 100%;
+}
+
+/* ==========================================================================
+ Form Login
+========================================================================== */
+.login-form-logo {
+  max-width: 200px;
+}
+
+
+/* ==========================================================================
+ Navbar
+========================================================================== */
+.navbar-brand.logo {
+    padding: 5px 15px;
+}
+
+.logo .logo-img {
+    height: 45px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 70px;
+}
+
+.logo-img {
+    height: 100%;
+    background: url("http://prologisys.com/wp-content/uploads/2017/07/LOGOTIPO-PROLOGISYS.png") no-repeat center center;
+    background-size: contain;
+    width: 100%;
+}
+
+.navbar-title {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Monerias */
+.bd-callout-info {
+    border-left-color: #17a2b8 !important;
+}
+
+.bd-callout {
+    padding: 1.25rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    border: 1px solid #eee;
+    border-left-width: .25rem;
+    border-radius: .25rem;
+}
+
+/* For resposie carousel */
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+  display: block !important;
+}
+
+.wrapper-carousel {
+  background-size: 100% 100%;
+}
